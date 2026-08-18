@@ -1,0 +1,158 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hortifruti Edna Góis</title>
+  <style>
+    :root {
+      --primary: #98fb98; /* Mint Green */
+      --secondary: #fffacd; /* Lemon Yellow */
+      --dark: #2f4f4f;
+      --light: #ffffff;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--light);
+      color: #333;
+    }
+    header {
+      background-color: var(--primary);
+      color: var(--dark);
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      font-style: italic;
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+    nav {
+      background-color: var(--dark);
+      padding: 1rem;
+      text-align: center;
+    }
+    nav a {
+      color: var(--light);
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: var(--secondary);
+    }
+    .container {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+    main {
+      flex: 3;
+    }
+    aside {
+      flex: 1;
+      background: #f4f4f4;
+      padding: 1.5rem;
+      border-radius: 8px;
+    }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 1rem;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .card img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 4px;
+    }
+    footer {
+      background-color: var(--dark);
+      color: var(--light);
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Hortifruti Edna Góis</h1>
+    <p>Sabor e frescor que você sente em cada mordida</p>
+  </header>
+
+  <nav>
+    <a href="#home">Início</a>
+    <a href="#frutas">Frutas</a>
+    <a href="#verduras">Verduras</a>
+    <a href="#hortalicas">Hortaliças</a>
+    <a href="#quemsomos">Quem Somos</a>
+    <a href="#faq">Perguntas Frequentes</a>
+  </nav>
+
+  <div class="container">
+    <main>
+      <section id="home">
+        <h2>Nossas Variedades</h2>
+        <div class="product-grid">
+          <div class="card">
+            <p>Maçã Gala</p>
+            <p><strong>R$ 6,99 / kg</strong></p>
+          </div>
+          <div class="card">
+            <p>Banana Prata</p>
+            <p><strong>R$ 4,50 / dúzia</strong></p>
+          </div>
+        </div>
+      </section>
+      
+      <section id="quemsomos" style="margin-top: 3rem;">
+        <h2>Quem Somos</h2>
+        <p>No Hortifruti Edna Góis, nosso compromisso é levar o melhor da natureza direto do produtor para a sua mesa, garantindo frescor e qualidade para a sua família.</p>
+      </section>
+
+      <section id="faq" style="margin-top: 3rem;">
+        <h2>Perguntas Frequentes</h2>
+        <p><strong>Como funciona a entrega?</strong> Entregamos na sua região com todo o cuidado e frescor.</p>
+      </section>
+    </main>
+
+    <aside>
+      <h2>Informações Úteis</h2>
+      <h3>📍 Nosso Endereço</h3>
+      <p>Rua Projetada, 165 - Itabaiana, Sergipe</p>
+      
+      <h3>🚚 Delivery</h3>
+      <p>Levamos frescor até a porta da sua casa! Faça seu pedido pelo WhatsApp:</p>
+      <p><strong>(79) 99933-9304</strong></p>
+
+      <h3>💳 Formas de Pagamento</h3>
+      <p>PIX, Cartões e Dinheiro.</p>
+    </aside>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Hortifruti Edna Góis</p>
+  </footer>
+
+</body>
+</html>
+```
